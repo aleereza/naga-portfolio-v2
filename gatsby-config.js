@@ -1,3 +1,4 @@
+
 require(`dotenv`).config();
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
@@ -7,22 +8,19 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
  */
 module.exports = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.js
-    siteTitle: `LightsCameraVancouver`,
-    siteTitleAlt: `LightsCameraVancouver - Photography Portfolio`,
-    siteHeadline: `LightsCameraVancouver - Photography Portfolio`,
-    siteUrl: `https://lightscameravancouver.com`,
-    siteDescription: `LightsCameraVancouver - Photography Portfolio`,
+    // Website branding and SEO
+    siteTitle: `Candid Reflections Photography`,
+    siteTitleAlt: `Candid Reflections Photography - Toronto Photographer`,
+    siteHeadline: `Candid Reflections Photography - Toronto Photographer`,
+    siteUrl: `https://www.candidreflectionsphotography.com`,
+    siteDescription: `Toronto-based photographer capturing portraits, events, travel, wildlife, landscapes, and genuine moments through photography and visual storytelling.`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `Candid Reflections Photography`,
   },
   trailingSlash: `never`,
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-jodie`,
-      // See the theme's README for all available options
       options: {
         navigation: [
           { name: `Projects`, slug: `/projects` },
@@ -39,14 +37,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `LightsCameraVancouver`,
-        short_name: `LCV`,
-        description: `LightsCameraVancouver - Photography Portfolio`,
+        name: `Candid Reflections Photography`,
+        short_name: `Candid Reflections`,
+        description: `Toronto-based photography portfolio featuring portraits, events, travel, wildlife, and landscapes.`,
         start_url: `/`,
         background_color: `#ffffff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#b75e09`,
         display: `standalone`,
         icons: [
           {
